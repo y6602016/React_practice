@@ -2,13 +2,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
-import { creaStore } from "redux";
+import { createStore } from "redux";
 
 import App from "./section_17/components/App";
 import reducers from "./section_17/reducers";
 
 ReactDOM.render(
-  <Provider store={creaStore(reducers)}>
+  <Provider store={createStore(reducers)}>
     <App />
   </Provider>,
   document.querySelector("#root")
